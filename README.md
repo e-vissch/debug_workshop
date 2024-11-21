@@ -1,5 +1,5 @@
 # SER
-Software Engineering for Research
+Software Engineering for Research, originally from cvanea's: https://github.com/cvanea/ser/ for the CDT for Health Data Science software engineering module.
 
 ## Installation
 ```bash
