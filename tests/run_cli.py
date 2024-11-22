@@ -7,4 +7,4 @@ def run_whole_model(command_line_args):
     
 
 if __name__ == "__main__":
-    run_whole_model(sys.argv[1:])
+    run_whole_model(sys.argv[1].split(" "))
