@@ -8,8 +8,6 @@ class Params:
     epochs: int
     batch_size: int
     learning_rate: float
-    commit: str
-
 
 PARAMS_FILE = "params.json"
 

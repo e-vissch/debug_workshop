@@ -26,3 +26,11 @@ conda activate ser
 ser --help
 ``` 
 
+## Use the debugger to find the issues
+
+Run run_cli.py with debug config "run_cli_train" or try "Python Debugger: Current File with Arguments" to define your own entry to cli.py.
+
+
+You can also try running jupyter_eg.ipynb to try debugging in jupyter. 
+
+- Note usually would add ".vscode" to .gitignore so not uploaded to repoitory as your personal config.

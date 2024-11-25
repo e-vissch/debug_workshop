@@ -3,7 +3,6 @@ from pathlib import Path
 
 import typer
 import torch
-import git
 
 from ser.train import train as run_train
 from ser.constants import RESULTS_DIR
@@ -31,11 +30,10 @@ def train(
     ),
 ):
     """Run the training algorithm."""
-    repo = git.Repo(search_parent_directories=True)
-    sha = repo.head.object.hexsha
+
 
     # wraps the passed in parameters
-    params = Params(name, epochs, batch_size, learning_rate, sha)
+    params = Params(name, epochs, batch_size, learning_rate)
 
     # setup device to run on
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
